@@ -21,9 +21,13 @@ Import another Fastfile from given url to use its lanes.
 
 ## Example
 
-Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
-
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
+```ruby
+import_from_url(
+  url: "<the url of the Fastfile to be downloaded>", # Required and cannot be empty,
+  path: "<the path of the Fastfile to be downloaded>", # Optional and default is fastlane/.cache
+  file_name: "<the name of the Fastfile to be downloaded>" # Optional and default is DownloadedFastfile
+)
+```
 
 ## Run tests for this plugin
 
