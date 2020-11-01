@@ -42,29 +42,16 @@ module Fastlane
           ]
         end
 
-        def description
-          "Import another Fastfile from given url to use its lanes"
-        end
-
         def authors
           ["Doruk Kangal"]
         end
 
-        def return_value
-          # If your method provides a return value, you can describe here what it does
+        def description
+          "Import another Fastfile from given url to use its lanes"
         end
 
         def details
-          # Optional:
           "This is useful if you have shared lanes across multiple apps and you want to store a Fastfile in a url"
-        end
-
-        def is_supported?(platform)
-          # Adjust this if your plugin only works for a particular platform (iOS vs. Android, for example)
-          # See: https://docs.fastlane.tools/advanced/#control-configuration-by-lane-and-by-platform
-          #
-          # [:ios, :mac, :android].include?(platform)
-          true
         end
 
         def example_code
