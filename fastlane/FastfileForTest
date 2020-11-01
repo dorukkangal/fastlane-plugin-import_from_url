@@ -1,0 +1,3 @@
+def hello_world
+  sh("echo 'Hello world!'")
+end
