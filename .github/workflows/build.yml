@@ -21,7 +21,9 @@ jobs:
     - name: Install dependencies
       run: bundle check || bundle install --jobs=4 --retry=3 --path vendor/bundle
     - name: Run tests
-      run: bundle exec rake
+      run: |
+        bundle exec rake
+        fastlane test
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
