@@ -1,7 +1,11 @@
 default_platform(:android)
 
-# import_from_url(url: 'https://raw.githubusercontent.com/dorukkangal/fastlane-plugin-import_from_url/master/fastlane/FastfileForTest')
-import('.cache/DownloadedFastfile')
+import_from_url(
+  path: 'test/',
+  url: 'https://raw.githubusercontent.com/dorukkangal/fastlane-plugin-import_from_url/master/fastlane/FastfileForTest',
+  file_name: 'TestFile'
+)
+# import('.cache/FastfileForTest')
 
 lane :test do
   hello_world

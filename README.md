@@ -25,7 +25,7 @@ Import another Fastfile from given url to use its lanes.
 import_from_url(
   url: "<the url of the Fastfile to be downloaded>", # Required and cannot be empty,
   path: "<the path of the Fastfile to be downloaded>", # Optional and default is fastlane/.cache
-  file_name: "<the name of the Fastfile to be downloaded>" # Optional and default is DownloadedFastfile
+  file_name: "<the name of the Fastfile to be downloaded>" # Optional and default is the original name of the file
 )
 ```
 
